@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    padding: 15rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    @include respond(desktop) {
+        padding: 15rem 10rem;
+    }
+    &__picture {
+        position: absolute;
+        top: 5rem;
+        z-index: 1;
+        height: 80%;
+        img {
+            height: 100%;
+            box-shadow: 0 12px 22px rgba(0, 0, 0, 0.14);
+        }
+        &__inner {
+            position: relative;
+            top: 0;
+            left: 0;
+            .btn-actions {
+                border-radius: 4rem;
+                overflow: hidden;
+                position: absolute;
+                bottom: -2rem;
+                left: 5rem;
+                display: flex;
+                box-shadow: 0 12px 22px rgba(0, 0, 0, 0.14);
+            }
+        }
+        @include respond(desktop) {
+            top: 5rem;
+            right: 15rem;
+            height: 80%;
+        }
+    }
+    &__text {
+        position: relative;
+        z-index: 2;
+        margin-right: 40%;
+        span {
+            display: flex;
+            margin-top: 5rem;
+            font-size: 2.2rem;
+            color: $color-secondary;
+            strong {
+                margin-right: 1rem;
+                color: $color-primary;
+            }
+        }
+        @include respond(desktop) {
+            margin-right: 35%;
+        }
+    }
+    .floating {
+        position: absolute;
+        box-shadow: none;
+        z-index: 0;
+        &--1 {
+            top: 9rem;
+            left: 20rem;
+        }
+        &--2 {
+            left: 0;
+            bottom: 0;
+            width: 50%;
+        }
+        &--3 {
+            top: 3rem;
+            right: 8rem;
+            width: 50rem;
+        }
+    }
+}

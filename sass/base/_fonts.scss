@@ -1,0 +1,11 @@
+@font-face {
+    font-family: '#{$inter-font}';
+    src: url('#{$inter-font-path}/#{$inter-font}.eot');
+    src: url('#{$inter-font-path}/#{$inter-font}.eot?#iefix') format('embedded-opentype'),
+    url('#{$inter-font-path}/#{$inter-font}.woff2') format('woff2'),
+    url('#{$inter-font-path}/#{$inter-font}.woff') format('woff'),
+    url('#{$inter-font-path}/#{$inter-font}.ttf') format('truetype'),
+    url('#{$inter-font-path}/#{$inter-font}.svg##{$inter-font-path}/#{$inter-font}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
